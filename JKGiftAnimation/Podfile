@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+
+target 'JKGiftAnimation' do
+  use_frameworks!
+
+  # 转Model
+  pod 'ObjectMapper'
+  # 下载图片
+  pod 'Kingfisher'
+
+end

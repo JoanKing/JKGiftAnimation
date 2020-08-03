@@ -1,0 +1,39 @@
+
+// MARK:- 设计步骤
+- 1>、定义 JKGiftDigitLabel
+  - 有描边效果
+  - 画两次文字
+  - 需要执行动画(弹动-放大->缩小->恢复原大小)
+- 2>、定义JKGiftChannelView
+  - 纯代码自定义JKGiftChannelView
+  - 定义模型 JKGiftModel
+  - 开始执行弹出动画(从左侧弹出来)
+  - 开始执行 JKGiftDigitLabel 弹动动画
+  - 延迟三秒钟，执行消失动画
+  - 顶定义一个外界可以添加缓存的方法：如果正在等待消失，则直接执行JKGiftDigitLabel弹动动画/添加到缓存中
+  - 需要给 JKGiftChannelView 定义状态
+  - 给状态进行赋值
+- 3>、定义 JKGiftContainerView
+  - 给 JKGiftContainerView 添加航道 JKGiftChannelView
+  - 让外界可以给我传入模型
+    - 检测是否有正在执行动画 JKGiftChannelView 和 新传入的模型的 giftName 和 userName(是否是同一个人，userName不靠谱，我们可以自己定义一个区别送礼物人身份的标识)
+    - 检测是否有空闲的 JKGiftChannelView
+    - 没有空闲的航道就加入缓存模型
+  - 监听 JKGiftChannelView 什么时候执行完成动画，判断缓存中是否有内容，从缓存中取出所有相同的 JKGiftModel，继续执行动画
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

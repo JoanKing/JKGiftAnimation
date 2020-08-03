@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JKGiftAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-nC-ME7">
+                                <rect key="frame" x="20" y="710" width="75" height="31"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="9Te-j2-mDJ"/>
+                                    <constraint firstAttribute="height" constant="31" id="ogQ-Wh-ip7"/>
+                                </constraints>
+                                <state key="normal" title="礼物1"/>
+                                <connections>
+                                    <action selector="gift1Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Uf-IE-34z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za2-Ap-83a">
+                                <rect key="frame" x="302" y="710" width="75" height="31"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Ku4-yp-3dP"/>
+                                    <constraint firstAttribute="height" constant="31" id="bk6-pw-Saf"/>
+                                </constraints>
+                                <state key="normal" title="礼物3"/>
+                                <connections>
+                                    <action selector="gift3Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tRT-PU-Zdk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04i-SC-FBp">
+                                <rect key="frame" x="169.5" y="710" width="75" height="31"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="NSh-cv-vu4"/>
+                                    <constraint firstAttribute="width" constant="75" id="bry-bA-5yZ"/>
+                                </constraints>
+                                <state key="normal" title="礼物2"/>
+                                <connections>
+                                    <action selector="gift2Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gck-k1-lWR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dAp-aJ-OGk">
+                                <rect key="frame" x="0.0" y="315" width="414" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="6fS-MT-qRE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-fx-QOM">
+                                <rect key="frame" x="176" y="783" width="62" height="31"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="EVc-FT-tuy"/>
+                                    <constraint firstAttribute="height" constant="31" id="wii-by-gfO"/>
+                                </constraints>
+                                <state key="normal" title="贵重礼物"/>
+                                <connections>
+                                    <action selector="gift2Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yXz-s5-yCm"/>
+                                    <action selector="gift4Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3j9-oE-Ikr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kip-nC-ME7" secondAttribute="bottom" constant="121" id="34N-rO-ghW"/>
+                            <constraint firstItem="dAp-aJ-OGk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Eh-be-cSd"/>
+                            <constraint firstItem="dAp-aJ-OGk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="9qg-kB-Vcl"/>
+                            <constraint firstItem="04i-SC-FBp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hf7-4n-GV3"/>
+                            <constraint firstItem="Kip-nC-ME7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WgB-2U-RRa"/>
+                            <constraint firstItem="dAp-aJ-OGk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XlQ-JS-WRv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="04i-SC-FBp" secondAttribute="bottom" constant="121" id="YME-y8-Di8"/>
+                            <constraint firstItem="tlh-fx-QOM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="coU-qJ-pyF"/>
+                            <constraint firstItem="tlh-fx-QOM" firstAttribute="top" secondItem="04i-SC-FBp" secondAttribute="bottom" constant="42" id="oHK-OK-vHp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Za2-Ap-83a" secondAttribute="bottom" constant="121" id="sek-pP-20p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Za2-Ap-83a" secondAttribute="trailing" constant="37" id="v3E-08-bVC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="preciousGifImageView" destination="dAp-aJ-OGk" id="GDe-Vm-9kN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
